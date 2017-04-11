@@ -5,17 +5,38 @@
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
-  <link href="css/bootstrap.css" rel="stylesheet">
-  <link href="css/revolution-slider.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="https://res.cloudinary.com/discovercity/raw/upload/interscopia/css/bootstrap.css" rel="stylesheet">
+  <link href="https://res.cloudinary.com/discovercity/raw/upload/interscopia/css/revolution-slider.css" rel="stylesheet">
+  <link href="https://res.cloudinary.com/discovercity/raw/upload/interscopia/css/style.css" rel="stylesheet">
   <!-- Responsive -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-  <link href="css/responsive.css" rel="stylesheet">
+  <link href="https://res.cloudinary.com/discovercity/raw/upload/interscopia/css/responsive.css" rel="stylesheet">
 </head>
 <body>
 
-<%= yield %>
+<div class="page-wrapper">
+	<%= render 'layouts/header' %>
+	<%= yield %>
+	<%= render 'layouts/footer' %>
+</div>
+
+<div class="scroll-to-top"><span class="fa fa-arrow-up"></span></div>
+
+<script src="https://res.cloudinary.com/discovercity/raw/upload/interscopia/js/bootstrap.min.js"></script>
+<script src="jhttps://res.cloudinary.com/discovercity/raw/upload/interscopia/s/revolution.min.js"></script>
+<!-- Bx slider -->
+<script src="https://res.cloudinary.com/discovercity/raw/upload/interscopia/js/jquery.bxslider.min.js"></script>
+<!-- MixIt UP JS -->
+<script src="https://res.cloudinary.com/discovercity/raw/upload/interscopia/js/jquery.mixitup.min.js"></script> 
+
+<!-- FancyBox -->
+<script src="https://res.cloudinary.com/discovercity/raw/upload/interscopia/js/jquery.fancybox.pack.js"></script>
+<script src="https://res.cloudinary.com/discovercity/raw/upload/interscopia/js/owl.carousel.min.js"></script>
+<script src="https://res.cloudinary.com/discovercity/raw/upload/interscopia/js/jquery.plugin.min.js"></script>
+<script src="https://res.cloudinary.com/discovercity/raw/upload/interscopia/js/jquery.datepick.min.js"></script>
+<script src="https://res.cloudinary.com/discovercity/raw/upload/interscopia/js/wow.js"></script>
+<script src="https://res.cloudinary.com/discovercity/raw/upload/interscopia/js/script.js"></script>
 
 </body>
 </html>
